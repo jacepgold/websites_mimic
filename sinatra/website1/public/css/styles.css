@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#site-title {
+    text-align: center;
+}
+
+#three {
+    display: flex;
+    flex-direction: row;
+    margin-top: -10px;
+}
+
+#three>* {
+    background-color: aliceblue;
+    border: 1px solid blue;
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    text-align: center;
+    width: 33%;
+}
+
+table {
+    width: 93%;
+    margin: 3em auto 0 auto;
+    background-color: silver;
+    border: 1px double black;
+    text-align: center;
+}
+
+table thead {
+    font-weight: bold;
+}
+
+table td {
+    border: 1px solid black;
+}
+
+#lists>* {
+    line-height: 1.5em;
+}
+
+#lists h3,
+li {
+    text-align: center;
+}
+
+#lists li {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 800px) {
+    #lists {
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    #lists h3 {
+        text-align: center;
+    }
+    #lists li {
+        text-align: left;
+    }
+    #lists #left ol li {
+        list-style-type: decimal;
+    }
+    #lists #right ul li {
+        list-style-type: disc;
+    }
+    /* #lists #left h3 {
+        margin-left: 15em;
+    }
+    #lists #right h3 {
+        margin-left: -24em;
+        #lists ol li {
+            list-style-type: decimal;
+        }
+    }*/
+}
+
+@media screen and (min-width: 1600px) {
+    #lists #left h3 {
+        margin-left: -2em;
+    }
+    #lists #left ol {
+        margin-left: -17em;
+    }
+    #lists #right h3 {
+        margin-left: 1em;
+    }
+    #lists #right ul {
+        margin-left: -16em;
+    }
+}
+
+#shapes {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 auto;
+    justify-content: space-around;
+}
+
+#circle {
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    background-color: green;
+    border: 4px solid black;
+    border-radius: 50%;
+    order: 1
+}
+
+#square {
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    background-color: purple;
+    border: 4px solid black;
+    order: 2;
+}
+
+img#bunny {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    line-height: 150px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    background-image: url('images/bunny.jpg') no-repeat;
+    border: 4px solid blue;
+    order: 3;
+}
